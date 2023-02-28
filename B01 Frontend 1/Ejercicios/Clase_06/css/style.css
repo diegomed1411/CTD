@@ -1,0 +1,31 @@
+*{margin: 0;
+padding: 0;}
+
+header{
+    text-align: center;
+    background-color: #E6E6E6;
+}
+img {
+    height: 100px;
+    width: 200px;
+    background-color: white;
+}
+
+div h1{
+    background-color: #C4C4C4;
+    text-align: center;
+
+}
+
+h1, h2{
+    color: #005677;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+h1 {    
+    font-size: 35px;
+    line-height: 84.69%;
+    margin:0;
+}
+
