@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header img{
+    margin: 10px 20px;
+}
+
+nav ul{
+    margin-right: 20px;
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    text-decoration: none;
+    margin: 13px;
+    font-size: 16px;
+}
+
+main{
+    height: calc(100vh - 250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+
+}
+
+.contenedorGeneral{
+    display: flex;
+}
+
+.contenedorMoto{
+    background-image: url(../img/delivery.jpg);
+    border-radius: 5px;
+    width: 490px;
+    height: 350px;
+}
+
+.contenedorGeneral h2{
+    font-weight: 700;
+    color: red;
+    margin: 20px;
+}
+
+.contenedorMoto h2 span{
+    color: white;
+}
+
+.contenedorTopPizza{
+    border-radius: 5px;
+    width: 490px;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.contenedorTopPizza h2{
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+.divisorTop{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedorRanking h3{
+    line-height: 43px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contenedorRanking li{
+    line-height: 35px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+footer{
+    background-color: #222222;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+footer nav ul{
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav ul li{
+    text-decoration: none;
+    margin: 8px;
+    font-size: 16px;
+}
+
+
+footer img{
+    margin: 10px 20px;
+    height: 80px;
+}
