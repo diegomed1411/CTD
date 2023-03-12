@@ -221,10 +221,11 @@
 
 .barraSuscripcion {
     background-color: #F0A83E;
-    height: 60x;
+    height: 60px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .barraSuscripcion div{
@@ -238,4 +239,103 @@
     margin-left: 10px;
     font-size: 20px;
     font-weight: 700;
+}
+
+.emailBox {
+    color: #A0A0A0;
+    background-color: #FFFFFF;
+    height: 40px;
+    width: 271px;
+    border-radius: 15px;
+    margin: 10px 0px;
+}
+
+.emailBox p {
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+#btnSuscribime {
+    width: 70px;
+    height: 34px;
+    background-color: #3C2313;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+}
+
+#btnSuscribime p {
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+.barraFooterIconos{
+    width: 100%;
+    background-color: #3C2313;
+    height: 284px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+}
+
+.barraFooterIconos img{
+    height: 23px;
+    width: 166px;
+}
+
+.iconoFooter {
+    width: 58px;
+    height: 58px;
+    border-radius: 30px;
+    background-color: #8A8787;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 4px #786960;
+}
+
+.iconoFooter img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #8A8787;
+}
+
+.iconoFooterContainer {
+    display: flex;
+    margin: 25px 0px;
+}
+
+.iconoDescripcion {
+    margin-left: 25px;
+}
+
+.iconoDescripcion h3{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.iconoDescripcion {
+    color: #8A8787;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.barraInferior {
+    width: 100%;
+    background-color: #222222;
+    color: #FFFFFF;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barraInferior p {
+    font-size: 11px;
+    line-height: 12px;
 }
