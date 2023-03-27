@@ -31,8 +31,11 @@
         <h1>Añadí tu super!</h1>
         <p>Agregá tu personaje favorito completando las opciones.</p>
         <fieldset>
+          <div class="entrada">
           <label for="nombre">*Nombre</label>
           <input type="text" name="nombre" id="nombre" required />
+          </div>
+          <div class="entrada">
           <label for="especie">*Especie</label>
           <select name="escpecie" id="especie" required>
             <option value="mamifero">Mamifero</option>
@@ -41,34 +44,45 @@
             <option value="humano">Humano</option>
             <option value="extraterrestre">Extraterrestre</option>
           </select>
+        </div>
         </fieldset>
         <fieldset>
+          <div class="entrada">
           <label for="fecha">Fecha</label>
           <input type="date" name="fecha" id="fecha" />
+        </div>
+        <div class="entrada">
           <label for="foto">Agregar Foto</label>
           <input type="file" name="foto" id="foto" />
+        </div>
         </fieldset>
         <fieldset>
-          <div class="areaTexto">
+          <div class="entrada">
             <textarea
               name="descripcion"
               id="descripcion"
               cols="30"
               rows="10"
+              placeholder="Descripción"
             ></textarea>
           </div>
+
           <div class="areaClicks">
-            <label for="poderes">Poderes</label>
+            <label for="poderes" id="labelPoderes">Poderes</label>
+            <div class="areaCheckbox">
             <label for="volar"><input type="checkbox" name="volar" id="volar" />Volar</label>
             <label for="superinteligencia"><input type="checkbox" name="superinteligencia" id="superinteligencia" />Superinteligencia</label>
             <label for="rayo"><input type="checkbox" name="rayo" id="rayo" />Vista de rayo láser</label>
             <label for="billetera"><input type="checkbox" name="billetera" id="billetera" />Billetera gorda</label>
+          </div>
             <hr>
+            <div class="radioClicks">
             <label for="Tipo de personaje"></label>
               <input type="radio" id="heroeHeroina" name="tipo" value="Héroe / Heroina">
   <label for="heroeHeroina">Héroe / Heroina</label><br>
   <input type="radio" id="villanoVillana" name="tipo" value="Villano / Villana">
   <label for="villanoVillana">Villano / Villana</label><br>
+</div>
           </div>
         </fieldset>
       </section>
