@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 *{
     margin: 0px;
@@ -7,4 +7,147 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+
+header{
+    width: 100%;
+}
+
+.barraSuperior{
+    background-color: #1CD1B0;    
+    height: 23px;
+    display: flex;
+    align-items: center;
+}
+
+.barraSuperior p{
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.barraLogo {
+    background-color: #00669F;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.barraLogo h2{
+    color: white;
+    margin-left: 20px;
+}
+
+.barraNavegacion{
+    background-color: #001D2D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.barraNavegacion nav ul{
+    color: white;
+    list-style: none;
+    display: flex;
+    margin-right: 10px;    
+}
+
+.barraNavegacion nav ul li{
+    font-size: 16px;
+    margin: 0px 10px;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section{
+    background-color: #00669F;
+    color: white;
+    padding: 0px 123px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 954px;
+}
+
+main section h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+main section p{
+    font-weight: 300;
+}
+
+fieldset {
+    display: flex;
+    width: 100%;
+    border: none;
+}
+
+.entrada{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 12px;
+}
+
+.entrada label, #labelPoderes{
+    font-size: 20px;
+    font-weight: 300;
+    height: 24px;
+    margin: 15px 0px;
+}
+
+.entrada input, .entrada select{
+    height: 63px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    font-size: 20px;
+    padding-left: 15px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+textarea{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    font-size: 20px;
+    margin: 30px 0px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 20px 5px 5px 10px;
+    height: 100%;
+}
+
+.areaClicks {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.areaCheckbox label{
+    display: flex;
+    font-weight: 300;
+    font-size: 16px;
+    height: 19px;
+    margin: 8px 0px;
+}
+
+
+
+
+
+
+
 
