@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
 
+
+/* declaracion de variables de colores */
 :root{
     --primary-purpule: #8B48BF;
     --primary-skyblue: #3CDDF3;
     --neutral-blue-gray: #1E1E26;
     --neutral-blue-intense: #232851;
+    --neutral-blue-navbar: #242E52;
+    --neutral-blue-hover: rgba(36, 46, 82, 0.6);
     --neutral-clear-gray: rgb(249, 249, 249);
 }
 
+/* selector global */
 *{
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -17,3 +22,129 @@
     padding: 0;
 }
 
+/* remover estilos de enlaces a de forma global */
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/* estilos del encabezado */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 174px;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a{
+    color: var(--neutral-blue-navbar);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    margin: 0px 14px;  
+}
+
+header nav ul li a:hover{
+    color: var(--neutral-blue-hover);
+}
+
+.buttonContact{
+    align-items: center;
+    background-color: var(--primary-purpule);
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    color: var(--neutral-clear-gray);
+    display: flex;
+    height: 44px;
+    justify-content: center;
+    width: 134px;
+}
+
+.buttonContact p{
+    font-size: 13px;
+    font-weight: 500;    
+}
+
+.buttonContact:hover{
+    background-color: var(--primary-skyblue);
+    color: var(--neutral-blue-navbar);
+}
+
+/*estilos de hero*/
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    padding: 86px 0px;
+}
+
+.heroImg{
+    width: 450px;
+}
+
+.heroContent{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.heroContent h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: right;
+    letter-spacing: -0.035em;
+    color: var(--neutral-blue-intense);
+}
+
+.heroContent p{
+    font-weight: 500;
+    text-align: right;
+}
+
+/*sección de features central */
+
+#sectionFeatures{
+    display: flex;
+    flex-direction: column;
+}
+.sectionHeadline{
+    background-color: var(--primary-purpule);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height:168px;
+    padding: 40px 200px;
+    gap: 100px;
+    color: var(--neutral-clear-gray);
+}
+
+.sectionHeadline h2{
+    width: 50%;
+    font-size: 36px;
+    font-weight: 700;
+    height: 88px;
+    line-height: 41px;
+}
+
+.sectionHeadline p{
+    width: 50%;
+    max-width: 450px;    
+}
+
+.containerFeature{
+    width: 100%;
+    display: flex;
+}
