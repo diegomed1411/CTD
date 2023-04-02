@@ -55,10 +55,17 @@ header nav ul li a {
   font-weight: 500;
   line-height: 19px;
   margin: 0px 14px;
+  transition: all 0.4s;
+  padding: 10px;
 }
 
 header nav ul li a:hover {
   color: var(--secondary-grey-clear);
+  font-size: 16px;
+}
+
+.hamburguer{
+    display: none;
 }
 
 .buttonContact {
@@ -71,6 +78,7 @@ header nav ul li a:hover {
   height: 44px;
   justify-content: center;
   width: 134px;
+  transition: all 0.4s;
 }
 
 .buttonContact p {
@@ -80,6 +88,7 @@ header nav ul li a:hover {
 
 .buttonContact:hover {
   background-color: var(--secondary-purpule);
+  transform: scale(1.1)
 }
 
 /*estilos de hero*/
@@ -305,11 +314,13 @@ section {
     height: 44px;
     justify-content: center;
     width: 134px;
+    transition: all 0.4s;
 }
 
 .buttonGoForIt:hover{
     background-color: var(--secondary-grey-clear);
     color: white;
+    transform: scale(1.1);
 }
 
 /*estilos de footer*/
@@ -337,6 +348,12 @@ footer{
 .rss a img{
     width: 20px;
     height: 20px;
+    transition: all 0.4s;
+}
+
+.rss a img:hover{
+    transform: scale(1.2);
+    margin-top: -5px;
 }
 
 .footerNav{
@@ -356,6 +373,12 @@ footer{
 
 .footerNav ul li a{
     color: white;
+    transition: all 0.4s;
+}
+
+.footerNav ul li a:hover{
+    color: var(--secondary-grey-clear);
+    text-decoration: underline;
 }
 
 .formAndCopy{
@@ -397,11 +420,14 @@ footer{
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
     color: white;
+    transition: all 0.4s;
 }
 
 #btnGo:hover{
  background-color: var(--secondary-grey-clear);
  color: var(--neutral-blue-intense);
+ transform: scale(1.1);
+
 }
 
 .copy p{
@@ -411,3 +437,408 @@ footer{
     font-size: 13px;
     line-height: 18px;
 }
+
+/*diseño para mobile 
+╔═══╗ 
+║███║ 
+║███║
+╚═══╝
+*/
+
+@media (max-width: 480px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        margin-top: 40px;
+        width: 100%;
+      }
+
+      .logoHeader{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+      }
+      
+      .logoHeader img {
+        height: 25px;
+      }
+      
+      header nav {
+        display: none
+      }
+      
+      .hamburguer{
+          display: flex;
+          justify-content: center;
+          width: 50%;
+
+      }
+
+      .hamburguer img{
+        height: 48px;
+        width: 48px;
+      }
+
+      header .buttonContact {
+        display: none;
+      }
+      
+      /*estilos de hero*/
+      section {
+        width: 100%;
+        display: flex;
+      }
+      .hero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 100px;
+        padding: 86px 0px;
+      }
+      
+      .heroImg {
+        width: 100%;
+        padding: 0px 40px;
+      }
+
+      .heroImg img{
+        width: 100%;
+      }
+      
+      .heroContent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-around;
+        padding: 0px 40px;
+      }
+      
+      .heroContent h1 {
+        font-size: 40px;
+        font-weight: 700;
+        text-align: right;
+        letter-spacing: -0.07em;
+        color: var(--neutral-blue-intense);
+        align-self: stretch;
+        line-height: 47px;
+      }
+      
+      .heroContent p {
+        margin-top: 28px;
+        font-weight: 500;
+        text-align: right;
+      }
+      
+      /*sección de features central, encabezado*/
+      
+      #sectionFeatures {
+        display: flex;
+        flex-direction: column;
+      }
+      .sectionHeadline {
+        background-color: var(--primary-purpule);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 168px;
+        padding: 40px 200px;
+        gap: 100px;
+        color: white;
+      }
+      
+      .sectionHeadline h2 {
+        width: 50%;
+        font-size: 36px;
+        font-weight: 700;
+        height: 88px;
+        line-height: 41px;
+      }
+      
+      .sectionHeadline p {
+        width: 50%;
+        max-width: 450px;
+      }
+      
+      /*seccion features central, cartas */
+      
+      .sectionContainerCards {
+        background-color: var(--background-grey);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px 0px;
+      }
+      
+      .featureCard {
+        display: flex;
+        margin: 20px;
+        width: 553px;
+        height: 158px;
+        gap: 23px;
+      }
+      
+      .featureCounter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 25px;
+        background-color: var(--primary-purpule);
+        color: white;
+        gap: 10px;
+        width: 69px;
+        height: 43px;
+        border-radius: 30px;
+        margin: 10px 0px;
+      }
+      
+      .featureCounter h4 {
+        font-weight: 700;
+        line-height: 23px;
+      }
+      
+      .featureDescription {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 440px;
+        gap: 18px;
+      }
+      
+      .featureDescription h5 {
+        color: var(--neutral-blue-intense);
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: -0.015em;
+      }
+      
+      .featureDescription p {
+        color: var(--secondary-grey-clear);
+      }
+      
+      /*seccion de cartas de jugadores Best of the mont */
+      
+      #sectionPlayersCards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0px;
+      }
+      
+      #sectionPlayersCards h2 {
+        height: 61px;
+        width: 424px;
+        font-size: 40px;
+        font-weight: 700;
+        color: var(--neutral-blue-intense);
+        text-align: center;
+        margin-bottom: 74px;
+      }
+      
+      .playersCardsContainer {
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      .playerCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 445px;
+        height: 260px;
+      }
+      
+      .playerImg {
+        width: 70px;
+        height: 70px;
+        margin-bottom: -35px;
+        z-index: 1;
+      }
+      
+      .playerDescription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--background-grey);
+        height: 220px;
+        padding: 22px;
+      }
+      
+      .playerDescription h3 {
+        font-weight: 700;
+        color: var(--neutral-blue-intense);
+        margin-top: 22px;
+      }
+      
+      .playerDescription p {
+        font-weight: 500;
+        color: var(--secondary-grey-clear);
+        width: 403px;
+        height: 100px;
+      }
+      
+      #sectionPlayersCards .buttonContact {
+        margin: 45px 0px;
+      }
+      
+      /* seccion call to action */
+      
+      #sectionCallToAction {
+        background-color: var(--primary-purpule);
+        height: 224px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 538px;
+      }
+      
+      #sectionCallToAction h3 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -0.005em;
+        width: 433px;
+        height: 96px;
+        color: white;
+      }
+      
+      .buttonGoForIt {
+          align-items: center;
+          background-color: white;
+          border-radius: 50px;
+          box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+          color: var(--primary-purpule);
+          display: flex;
+          height: 44px;
+          justify-content: center;
+          width: 134px;
+          transition: all 0.4s;
+      }
+      
+      .buttonGoForIt:hover{
+          background-color: var(--secondary-grey-clear);
+          color: white;
+          transform: scale(1.1);
+      }
+      
+      /*estilos de footer*/
+      
+      footer{
+          background-color: var(--dark-background);
+          width: 100%;
+          height: 247px;
+          display: flex;
+          justify-content: space-around;
+      }
+      
+      .logoAndRss{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          height: 100%;
+      }
+      
+      .rss{
+          display: flex;
+          gap:13px
+      }
+      
+      .rss a img{
+          width: 20px;
+          height: 20px;
+          transition: all 0.4s;
+      }
+      
+      .rss a img:hover{
+          transform: scale(1.2);
+          margin-top: -5px;
+      }
+      
+      .footerNav{
+          display: flex;
+          align-items: center;
+          height: 100%;
+      }
+      
+      .footerNav ul{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          list-style: none;
+          gap:12px
+      }
+      
+      .footerNav ul li a{
+          color: white;
+          transition: all 0.4s;
+      }
+      
+      .footerNav ul li a:hover{
+          color: var(--secondary-grey-clear);
+          text-decoration: underline;
+      }
+      
+      .formAndCopy{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+      }
+      
+      .formAndCopy form{
+          display: flex;
+          gap: 9px;
+      }
+      
+      #inputInbox{
+          width: 201px;
+          height: 44px;
+          padding: 10px;
+          gap:10px;
+          border-radius: 50px;
+          font-size: 13px;
+          font-weight: 600;
+          line-height: 19px;
+          color: var(--neutral-blue-intense);
+      }
+      
+      #inputInbox::placeholder{
+          color: var(--secondary-grey-clear);
+      }
+      
+      #btnGo{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+          width: 63px;
+          height: 42px;
+          background-color: var(--primary-purpule);
+          box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+          border-radius: 50px;
+          color: white;
+          transition: all 0.4s;
+      }
+      
+      #btnGo:hover{
+       background-color: var(--secondary-grey-clear);
+       color: var(--neutral-blue-intense);
+       transform: scale(1.1);
+      
+      }
+      
+      .copy p{
+          text-align: end;
+          color: var(--secondary-grey-clear);
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 18px;
+      }
+  }
