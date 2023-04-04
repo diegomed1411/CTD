@@ -5,6 +5,7 @@
   --primary-purpule: #8b48bf;
   --primary-skyblue: #3cddf3;
   --secondary-purpule: rgba(139, 72, 191, 0.7);
+  --background-purple: rgba(139, 72, 191, 0.3);
   --neutral-blue-gray: #1e1e26;
   --neutral-blue-intense: #232851;
   --neutral-blue-navbar: #242e52;
@@ -69,19 +70,19 @@ header nav ul li a:hover {
 }
 
 .buttonContact {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  height: 44px;
+  width: 134px;
   background-color: var(--primary-purpule);
+  color: white;
   border-radius: 50px;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-  color: white;
-  display: flex;
-  height: 44px;
-  justify-content: center;
-  width: 134px;
   transition: all 0.4s;
 }
 
-.buttonContact p {
+.buttonContact span {
   font-size: 13px;
   font-weight: 500;
 }
@@ -124,7 +125,7 @@ section {
   color: var(--neutral-blue-intense);
 }
 
-.heroContent p {
+.heroContent p{
   font-weight: 500;
   text-align: right;
 }
@@ -136,12 +137,12 @@ section {
   flex-direction: column;
 }
 .sectionHeadline {
+  width: 100%;
+  height: 168px;
   background-color: var(--primary-purpule);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-  height: 168px;
   padding: 40px 200px;
   gap: 100px;
   color: white;
@@ -151,7 +152,6 @@ section {
   width: 50%;
   font-size: 36px;
   font-weight: 700;
-  height: 88px;
   line-height: 41px;
 }
 
@@ -171,52 +171,48 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 20px 0px;
+  padding: 20px 50px;
+
 }
 
 .featureCard {
-  display: flex;
+  display: inline-block;
   margin: 20px;
   width: 553px;
-  height: 158px;
+  min-height: 158px;
   gap: 23px;
+
 }
 
-.featureCounter {
+.featureHeader {
   display: flex;
-  justify-content: center;
   align-items: center;
+  height: 43px;
+  gap: 10px;
+}
+
+.featureHeader span{
   padding: 10px 25px;
   background-color: var(--primary-purpule);
-  color: white;
-  gap: 10px;
-  width: 69px;
-  height: 43px;
+  color: white;  
+  width: 69px;  
   border-radius: 30px;
   margin: 10px 0px;
-}
-
-.featureCounter h4 {
   font-weight: 700;
   line-height: 23px;
 }
 
-.featureDescription {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 440px;
-  gap: 18px;
-}
-
-.featureDescription h5 {
+.featureHeader h5{
   color: var(--neutral-blue-intense);
   font-weight: 700;
   line-height: 23px;
   letter-spacing: -0.015em;
 }
 
-.featureDescription p {
+.featureDescription p{
+  width: 100%;
+  padding-left: 79px;
+  padding-right: 20px;
   color: var(--secondary-grey-clear);
 }
 
@@ -319,6 +315,10 @@ section {
     justify-content: center;
     width: 134px;
     transition: all 0.4s;
+}
+
+.buttonGoForIt p{
+  font-size: 13px;
 }
 
 .buttonGoForIt:hover{
@@ -500,7 +500,7 @@ footer{
         flex-direction: column;
         justify-content: space-around;
         gap: 100px;
-        padding: 86px 0px;
+        padding: 86px 0px 39px 0px;
       }
       
       .heroImg {
@@ -535,6 +535,7 @@ footer{
         margin-top: 28px;
         font-weight: 500;
         text-align: right;
+        margin-bottom: 28px;
       }
       
       /*sección de features central, encabezado*/
@@ -574,158 +575,67 @@ footer{
       /*seccion features central, cartas */
       
       .sectionContainerCards {
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 20px 0px;
+        padding: 75px 0px 0px 0px;
+      
       }
       
       .featureCard {
-        display: flex;
-        margin: 20px;
         width: 100%;
-        height: 100%;
-        gap: 0px;
-      }
-      
-      .featureCounter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 0px;
-        background-color: var(--primary-purpule);
-        color: white;
-        gap: 0px;
-        width: 69px;
-        height: 43px;
-        border-radius: 30px;
-        margin: 10px 0px;
-      }
-      
-      .featureCounter h4 {
-        font-weight: 700;
-        line-height: 23px;
-      }
-      
-      .featureDescription {
+        min-height: 158px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        width: 440px;
+        margin: 20px 0px 10px 20px;
+      
+      }
+      
+      .featureHeader {
+        background-color: var(--background-purple);
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
         gap: 18px;
       }
       
-      .featureDescription h5 {
-        color: var(--neutral-blue-intense);
-        font-weight: 700;
-        line-height: 23px;
-        letter-spacing: -0.015em;
-      }
-      
-      .featureDescription p {
+      .featureDescription p{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 0px;
         color: var(--secondary-grey-clear);
       }
-      
       /*seccion de cartas de jugadores Best of the mont */
       
       #sectionPlayersCards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 100px 0px;
+        padding: 68px 0px;
       }
-      
-      #sectionPlayersCards h2 {
-        height: 61px;
-        width: 424px;
-        font-size: 40px;
-        font-weight: 700;
-        color: var(--neutral-blue-intense);
-        text-align: center;
-        margin-bottom: 74px;
+
+      .playersCardsContainer .playerCard:first-child{
+        display: none;
       }
-      
-      .playersCardsContainer {
-        display: flex;
-        justify-content: space-around;
-      }
-      
-      .playerCard {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 445px;
-        height: 260px;
-      }
-      
-      .playerImg {
-        width: 70px;
-        height: 70px;
-        margin-bottom: -35px;
-        z-index: 1;
-      }
-      
-      .playerDescription {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        background-color: var(--background-grey);
-        height: 220px;
-        padding: 22px;
-      }
-      
-      .playerDescription h3 {
-        font-weight: 700;
-        color: var(--neutral-blue-intense);
-        margin-top: 22px;
-      }
-      
-      .playerDescription p {
-        font-weight: 500;
-        color: var(--secondary-grey-clear);
-        width: 403px;
-        height: 100px;
-      }
-      
-      #sectionPlayersCards .buttonContact {
-        margin: 45px 0px;
+
+      .playersCardsContainer .playerCard:last-child{
+        display: none;
       }
       
       /* seccion call to action */
       
       #sectionCallToAction {
-        background-color: var(--primary-purpule);
-        height: 224px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 538px;
+        background-color: var(--primary-skyblue);
+        height: 366px;
+        flex-direction: column;
+        gap: 10px;
       }
       
       #sectionCallToAction h3 {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 48px;
-        letter-spacing: -0.005em;
-        width: 433px;
-        height: 96px;
-        color: white;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        padding: 40px 80px;
       }
       
       .buttonGoForIt {
-          align-items: center;
-          background-color: white;
-          border-radius: 50px;
-          box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-          color: var(--primary-purpule);
-          display: flex;
-          height: 44px;
-          justify-content: center;
-          width: 134px;
-          transition: all 0.4s;
+          background-color: var(--neutral-blue-intense);
+          color: white;
+          font-size: 13px;
+          margin-bottom: 20px;
       }
       
       .buttonGoForIt:hover{
@@ -737,10 +647,9 @@ footer{
       /*estilos de footer*/
       
       footer{
-          background-color: var(--dark-background);
-          width: 100%;
-          height: 247px;
-          display: flex;
+          height: 100%;
+          flex-direction: column;
+          gap:25px;
           justify-content: space-around;
       }
       
@@ -793,6 +702,7 @@ footer{
       }
       
       .formAndCopy{
+        order: 1;
           height: 100%;
           display: flex;
           flex-direction: column;
