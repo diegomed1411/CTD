@@ -282,7 +282,7 @@ section {
   margin: 45px 0px;
 }
 
-/* seccion call to action */
+/* -----------------seccion call to action ---------------------------*/
 
 #sectionCallToAction {
   background-color: var(--primary-purpule);
@@ -327,7 +327,7 @@ section {
     transform: scale(1.1);
 }
 
-/*estilos de footer*/
+/*----------------------estilos de footer---------------------------*/
 
 footer{
     background-color: var(--dark-background);
@@ -363,7 +363,7 @@ footer{
 #footerMenu{
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 40%;
 }
 
 .footerNav{
@@ -431,6 +431,7 @@ footer{
     border-radius: 50px;
     color: white;
     transition: all 0.4s;
+    font-size: 13px;
 }
 
 #btnGo:hover{
@@ -448,12 +449,12 @@ footer{
     line-height: 18px;
 }
 
-/*diseño para mobile 
+/*diseño para mobile ----------------------------------------------------------
 ╔═══╗ 
 ║███║ 
 ║███║
 ╚═══╝
-*/
+------------------------------------------------------------------------------*/
 
 @media (max-width: 480px) {
     header {
@@ -495,7 +496,7 @@ footer{
         display: none;
       }
       
-      /*estilos de hero*/
+      /*estilos de hero---------------------------------------------*/
       section {
         width: 100%;
         display: flex;
@@ -544,7 +545,7 @@ footer{
         margin-bottom: 28px;
       }
       
-      /*sección de features central, encabezado*/
+      /*sección de features central, encabezado------------------------------*/
       
       #sectionFeatures {
         display: flex;
@@ -578,7 +579,7 @@ footer{
         display: none;
       }
 
-      /*seccion features central, cartas */
+      /*seccion features central, cartas -----------------------------------*/
       
       .sectionContainerCards {
         padding: 75px 0px 0px 0px;
@@ -607,7 +608,7 @@ footer{
         padding-right: 0px;
         color: var(--secondary-grey-clear);
       }
-      /*seccion de cartas de jugadores Best of the mont */
+      /*seccion de cartas de jugadores Best of the mont --------------------------*/
       
       #sectionPlayersCards {
         padding: 68px 0px;
