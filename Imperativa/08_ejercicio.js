@@ -58,3 +58,13 @@ let fibonacci = numero => {
 fibonacci(3)
 
 //ver resolucion de este ejercicio
+
+function tablaDeMultiplicar(numero) {
+	let vuelta = 1
+ 	while(vuelta<=10){
+		console.log(numero+" * "+vuelta+" = "+numero*vuelta)
+		vuelta++
+	 }
+}
+
+tablaDeMultiplicar(6)
