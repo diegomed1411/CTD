@@ -41,6 +41,8 @@ const concurso ={
           resultadoEtapas.push({[i+1] : 'Ganador Primer'})
         } else if (a[i] < b[i]) {
             resultadoEtapas.push({[i+1] : 'Ganador Segundo'})
-        } }
+        } } return resultadoEtapas
     }
 }
+
+console.log(concurso.etapas(alicia, bob))
