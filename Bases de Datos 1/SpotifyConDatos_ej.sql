@@ -18,8 +18,8 @@ idestado as 'Id Estado', Fechacreacion as 'Fecha Creación', Fechaeliminada as '
 order by cantcanciones desc limit 1;
 
 /*En otro momento se obtuvo un listado con los 5 usuarios más jóvenes, obtener un listado de los 10 siguientes.*/
-select * from usuario
-order by fecha_nac desc
+select * from usuarios
+order by fecha_nacimiento desc
 limit 10
 offset 5;
 
@@ -48,7 +48,13 @@ e) Sexo: Masculino
 
 f) Código Postal: B4129ATF
 
-g) País: Colombia
+g) País: Colombia */
 
-Eliminar todas las canciones de género “pop”.
+select * from usuarios; 
+
+insert into usuarios
+values (1, 'nuevousuariodespotify@gmail.com', 'S4321m', '1991-11-15', 0, 'B4129ATF', 'Colombia', '2023-06-03 20:00:00');
+
+/*Eliminar todas las canciones de género “pop”.
 Editar todos los artistas que no tengan una imagen cargada y cargarles el texto “Imagen faltante” en la columna de imagen.*/
+
