@@ -46,3 +46,68 @@ const concurso ={
 }
 
 console.log(concurso.etapas(alicia, bob))
+
+/*digitalHouse()
+Creá la función digitalHouse() que recibirá 2 números como parámetros. La función
+deberá imprimir por pantalla los números del 1 al 100, pero teniendo en cuenta los
+siguientes criterios:
+● Si el número a imprimir es múltiplo del primer parámetro que se ingresó, deberá
+mostrar el string “Digital” en lugar del número.
+● Si el número a imprimir es múltiplo del segundo parámetro ingresado, deberá
+mostrar el string “House” en su lugar del número.
+● Si el número a imprimir es múltiplo de ambos parámetros, deberá mostrar el string
+“Digital House” en lugar del número.*/
+
+let digitalHouse = (num1, num2) =>{
+  let resultado=[];
+  for (let i = 1; i <= 100; i++) {
+    if(i%num1 === 0 && i%num2=== 0){
+      resultado.push("Digital House")
+    } else if(i%num1 === 0){
+      resultado.push("Digital")
+    } else if (i%num2 === 0){
+      resultado.push("House")
+    } else{
+      resultado.push(i)
+    }
+  }
+  return resultado
+}
+
+console.log('----------------------------')
+console.log(digitalHouse(2, 3))
+
+/*sumArray()... Reloaded
+Vamos a retomar el ejercicio sumArray() que hicimos en la clase de arrays, pero esta vez
+lo modificaremos para que pueda recibir un array de números de cualquier cantidad de
+elementos.
+Si no recordás el enunciado original: deberás crear una función sumaArray que acepte
+un arreglo de números y devuelva la suma de todos ellos.*/
+
+let sumArray = (arreglo) =>{
+  let acumulador = 0
+  arreglo.map(x => acumulador += x)
+  return acumulador
+}
+
+console.log(sumArray([1, 2, 3]))
+
+/*Ya que estamos retocando funciones, hagamos lo propio con la función del ejercicio
+simulación join(). Deberás modificar la función join() de manera que pueda recibir un
+array de strings de cualquier cantidad de elementos.*/
+
+//solucion utilizando join
+
+let join1 = (arreglo) =>{
+  return arreglo.join('')
+}
+
+console.log(join1(['H','o','l','a']))
+
+// solucion sin utilizar join
+
+let join2 = (arreglo) =>{
+   return sumArray(arreglo).slice(1,arreglo.length+1)
+}
+console.log(join2(['H','o','l','a']))
+
