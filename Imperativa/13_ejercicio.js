@@ -64,7 +64,7 @@ split(“chau”) debe retornar [“c”,”h”,”a”,”u”] */
 let split = (palabra) =>{
     let arreglo = []
     for(i=0; i<palabra.length; i++){
-        arreglo.push(palabra.slice(i, i+1))
+        arreglo.push(palabra[i])
     }
     return arreglo
 }
@@ -98,7 +98,7 @@ palindromo(“Enrique”) debe retornar false
 let palindromo = (palabra) =>{
     let inversa = []
     for(let i = palabra.length -1; i>=0 ; i--){
-        inversa.push(palabra.charAt(i))
+        inversa.push(palabra[i])
     }
     return inversa.join('').toUpperCase() === palabra.toUpperCase() ? true : false
 }
