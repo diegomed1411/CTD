@@ -27,9 +27,22 @@ select productos.ProductoNombre, categorias.CategoriaNombre, proveedores.Contact
 left join categorias on categorias.CategoriaID = productos.CategoriaID
 left join proveedores on proveedores.ProveedorID = productos.ProveedorID;
 
-/*4. Para cada categoría listar el promedio del precio unitario de sus productos.
-5. Para cada cliente, indicar la última factura de compra. Incluir a los clientes que
-nunca hayan comprado en e-market.
-6. Todas las facturas tienen una empresa de correo asociada (enviovia). Generar un
+/*4. Para cada categoría listar el promedio del precio unitario de sus productos.*/
+select categorias.CategoriaID, categorias.CategoriaNombre , round(avg(facturadetalle.PrecioUnitario),2) as 'Precio Promedio' from categorias
+left join productos on productos.CategoriaID = categorias.CategoriaID
+right join facturadetalle on facturadetalle.ProductoID = productos.ProductoID
+group by categorias.CategoriaID
+order by categorias.CategoriaID asc;
+
+/*5. Para cada cliente, indicar la última factura de compra. Incluir a los clientes que
+nunca hayan comprado en e-market.*/
+select clientes.ClienteID, clientes.Compania, clientes.Contacto, clientes.Titulo, max(facturas.FechaFactura) as 'Ultima compra' from clientes
+left join facturas on facturas.ClienteID = clientes.ClienteID
+group by clientes.ClienteID;
+
+/* 6. Todas las facturas tienen una empresa de correo asociada (enviovia). Generar un
 listado con todas las empresas de correo, y la cantidad de facturas
 correspondientes. Realizar la consulta utilizando RIGHT JOIN.*/
+select correos.CorreoID, count(facturas.FacturaID), correos.Compania from facturas
+right join correos on correos.CorreoID = facturas.EnvioVia
+group by correos.CorreoID;

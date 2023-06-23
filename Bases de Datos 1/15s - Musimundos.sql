@@ -57,3 +57,5 @@ select min(milisegundos), max(milisegundos), avg(milisegundos) from canciones;
 select generos.nombre, min(milisegundos), max(milisegundos), avg(milisegundos) from canciones
 inner join generos on generos.id = canciones.id_genero
 group by generos.nombre;
+
+
