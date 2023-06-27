@@ -48,3 +48,5 @@ aquellas que aún no le han asignado un artista en nuestra base de datos.*/
 select pelicula.id, pelicula.titulo, count(artista_x_pelicula.artista_id) as 'cantidad de artistas' from pelicula
 left join artista_x_pelicula on artista_x_pelicula.pelicula_id = pelicula.id
 group by pelicula.id;
+
+
