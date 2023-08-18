@@ -17,13 +17,16 @@ public class CuentaCorriente extends Cuenta{
     }
 
     @Override
-    public void extraer(Double dinero) {
-        public void extraer(Double dinero){
-            if (getSaldo() + descubierto <= dinero){
-                setSaldo(getSaldo() - dinero);
-            }
+    public String extraer(Double dinero) {
+        if (getSaldo() + descubierto >= dinero) {
+            setSaldo(getSaldo() - dinero);
+            return "transaccion exitosa";
+        }else {
+            return "saldo insuficiente";
         }
+
     }
+
 
     public void depositarCheque(Double monto, String banco, Date fechaPago){
         setSaldo(getSaldo()+monto);

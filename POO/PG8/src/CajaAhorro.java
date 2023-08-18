@@ -5,7 +5,6 @@ public class CajaAhorro extends Cuenta{
         super(cliente, saldo);
         this.tasaInteres = tasaInteres;
     }
-
     public Double getTasaInteres() {
         return tasaInteres;
     }
@@ -16,5 +15,15 @@ public class CajaAhorro extends Cuenta{
 
     public void cobrarInteresMensual(){
         setSaldo(getSaldo()*(tasaInteres/100)/12);
+    }
+
+    @Override
+    public String extraer(Double dinero) {
+        if (getSaldo() >= dinero){
+            setSaldo(getSaldo()-dinero);
+            return "extraccion exitosa";
+        } else {
+            return "saldo insuficiente";
+        }
     }
 }

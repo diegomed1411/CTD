@@ -3,17 +3,13 @@ public abstract class Cuenta {
     private Double saldo;
 
     public void depositar (Double dinero){
-        this.saldo = saldo + dinero;
+        setSaldo(getSaldo()+dinero);
     }
 
-    public void extraer(Double dinero){
-        if (this.saldo <= dinero){
-            this.saldo = saldo - dinero;
-        }
-    }
+    public abstract String extraer(Double dinero);
 
-    public Double informarSaldo() {
-        return saldo;
+    public String informarSaldo() {
+        return "el saldo de la cuenta es "+saldo;
     }
 
     public Cuenta(Cliente cliente, Double saldo) {
