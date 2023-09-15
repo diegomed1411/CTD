@@ -2,15 +2,29 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CarritoComposite/CarritoComposite.iml" filepath="$PROJECT_DIR$/CarritoComposite/CarritoComposite.iml" />
       <module fileurl="file://$PROJECT_DIR$/Clase_02/Clase_02.iml" filepath="$PROJECT_DIR$/Clase_02/Clase_02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Clase_03/Clase_03.iml" filepath="$PROJECT_DIR$/Clase_03/Clase_03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Clase_04/Clase_04.iml" filepath="$PROJECT_DIR$/Clase_04/Clase_04.iml" />
       <module fileurl="file://$PROJECT_DIR$/Clase_05/Clase_05.iml" filepath="$PROJECT_DIR$/Clase_05/Clase_05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Clase_09/Clase_09.iml" filepath="$PROJECT_DIR$/Clase_09/Clase_09.iml" />
       <module fileurl="file://$PROJECT_DIR$/Clase_10/Clase_10.iml" filepath="$PROJECT_DIR$/Clase_10/Clase_10.iml" />
       <module fileurl="file://$PROJECT_DIR$/Clase_11/Clase_11.iml" filepath="$PROJECT_DIR$/Clase_11/Clase_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Clase_12/Clase_12.iml" filepath="$PROJECT_DIR$/Clase_12/Clase_12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Clase_13/Clase_13.iml" filepath="$PROJECT_DIR$/Clase_13/Clase_13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Clase_17/Clase_17.iml" filepath="$PROJECT_DIR$/Clase_17/Clase_17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Clase_Patrones2/Clase_Patrones2.iml" filepath="$PROJECT_DIR$/Clase_Patrones2/Clase_Patrones2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjColecciones/EjColecciones.iml" filepath="$PROJECT_DIR$/EjColecciones/EjColecciones.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjComposite/EjComposite.iml" filepath="$PROJECT_DIR$/EjComposite/EjComposite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjContenedores2/EjContenedores2.iml" filepath="$PROJECT_DIR$/EjContenedores2/EjContenedores2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Operaciones-Sobre-Collecciones/Operaciones-Sobre-Collecciones.iml" filepath="$PROJECT_DIR$/Operaciones-Sobre-Collecciones/Operaciones-Sobre-Collecciones.iml" />
       <module fileurl="file://$PROJECT_DIR$/PG1/PG1.iml" filepath="$PROJECT_DIR$/PG1/PG1.iml" />
       <module fileurl="file://$PROJECT_DIR$/PG8/PG8.iml" filepath="$PROJECT_DIR$/PG8/PG8.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/POO.iml" filepath="$PROJECT_DIR$/.idea/POO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PracticaPZ/PracticaPZ.iml" filepath="$PROJECT_DIR$/PracticaPZ/PracticaPZ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PracticaParcial/PracticaParcial.iml" filepath="$PROJECT_DIR$/PracticaParcial/PracticaParcial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Semasforo/Semasforo.iml" filepath="$PROJECT_DIR$/Semasforo/Semasforo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ej_Jugadores/ej_Jugadores.iml" filepath="$PROJECT_DIR$/ej_Jugadores/ej_Jugadores.iml" />
       <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
     </modules>
   </component>
