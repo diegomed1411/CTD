@@ -15,3 +15,15 @@ test('Multiplicar 2 numeros', ()=>{
 test('Dividir 2 numeros', ()=>{
     expect(division(25, "G")).toBe("berenjena");
 })
+
+test('Dividir 2 numeros error', ()=>{
+    expect(division(25, 0)).toBe("error");
+})
+
+test('Dividir 2 numeros correctamente incorrecto', ()=>{
+    expect(division(25, 5)).toBe(6);
+})
+
+test('Dividir 2 numeros correctamente ok', ()=>{
+    expect(division(25, 5)).toBe(5);
+})

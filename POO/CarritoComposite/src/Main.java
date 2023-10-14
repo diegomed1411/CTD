@@ -12,15 +12,16 @@ public class Main {
 
         Combo combo1 = new Combo("Cambo Almuerzo", 10.0, coca, papas, hamburguesa);
         Combo combo2 = new Combo("Fit", 5.0, ensalada, Wrap);
-        Combo combo3 = new Combo("Desayuno", 20.0, Cafe, helado);
+        Combo combo3 = new Combo("Desayuno", 20.0, Cafe, helado, combo1);
 
         Carrito carrito1 = new Carrito();
-        carrito1.agregarAlCarrito(combo2);
+        carrito1.agregarAlCarrito(combo3);
         carrito1.agregarAlCarrito(coca);
         System.out.println(carrito1);
         System.out.println(carrito1.getPrice());
         System.out.println(combo2.getPrice());
         System.out.println(coca.getPrice());
+
 
 
     }

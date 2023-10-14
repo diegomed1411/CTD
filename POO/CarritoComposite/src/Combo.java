@@ -35,4 +35,12 @@ public class Combo implements Comprable{
                 ", listaProductos=" + listaProductos +
                 '}';
     }
+
+    public void agregarComprable(Comprable comprable) {
+        listaProductos.add(comprable);
+    }
+
+    public void quitarComprable(Comprable comprable) {
+        listaProductos.remove(comprable);
+    }
 }
