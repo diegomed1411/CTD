@@ -1,0 +1,15 @@
+2024-02-20 22:07:58 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE ANIMALES (ID INT PRIMARY KEY, NOMBRE VARCHAR(100) NOT NULL, COLOR VARCHAR(100) NOT NULL[*]"; se esperaba "AS, DEFAULT, GENERATED, ON UPDATE, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE ANIMALES (ID INT PRIMARY KEY, NOMBRE VARCHAR(100) NOT NULL, COLOR VARCHAR(100) NOT NULL[*]"; expected "AS, DEFAULT, GENERATED, ON UPDATE, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE ANIMALES (ID INT PRIMARY KEY, NOMBRE VARCHAR(100) NOT NULL, COLOR VARCHAR(100) NOT NULL [42001-214]
+2024-02-20 22:12:30 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO ANIMALES VALUES(1, 'Indiana', 'perro')[*](2, 'Gahia', 'perro')(3, 'Voli', 'perro')"
+Syntax error in SQL statement "INSERT INTO ANIMALES VALUES(1, 'Indiana', 'perro')[*](2, 'Gahia', 'perro')(3, 'Voli', 'perro')"; SQL statement:
+INSERT INTO ANIMALES VALUES(1, 'Indiana', 'perro')(2, 'Gahia', 'perro')(3, 'Voli', 'perro') [42000-214]
+2024-02-20 22:13:02 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO ANIMALES VALUES (1, 'Indiana', 'perro')[*](2, 'Gahia', 'perro')(3, 'Voli', 'perro')"
+Syntax error in SQL statement "INSERT INTO ANIMALES VALUES (1, 'Indiana', 'perro')[*](2, 'Gahia', 'perro')(3, 'Voli', 'perro')"; SQL statement:
+INSERT INTO ANIMALES VALUES (1, 'Indiana', 'perro')(2, 'Gahia', 'perro')(3, 'Voli', 'perro') [42000-214]
+2024-02-20 22:16:58 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: El objeto ya está cerrado
+The object is already closed [90007-214]
