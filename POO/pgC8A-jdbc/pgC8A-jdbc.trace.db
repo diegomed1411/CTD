@@ -1,0 +1,4 @@
+2024-02-23 05:30:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "TEST" no encontrada
+Table "TEST" not found; SQL statement:
+select * from TEST [42102-214]

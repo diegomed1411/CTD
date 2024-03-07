@@ -1,0 +1,8 @@
+2024-02-27 15:54:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "DROP TABLE [*]IF EXIST USUARIO; CREATE TABLE USUARIO(ID INT PRIMARY KEY,NOMBRE varchar(100) NOT NULLEMAIL varchar(100) NOT NULLSUELDO numeric(15,2) NOT NULL)"; se esperaba "identifier"
+Syntax error in SQL statement "DROP TABLE [*]IF EXIST USUARIO; CREATE TABLE USUARIO(ID INT PRIMARY KEY,NOMBRE varchar(100) NOT NULLEMAIL varchar(100) NOT NULLSUELDO numeric(15,2) NOT NULL)"; expected "identifier"; SQL statement:
+DROP TABLE IF EXIST USUARIO; CREATE TABLE USUARIO(ID INT PRIMARY KEY,NOMBRE varchar(100) NOT NULLEMAIL varchar(100) NOT NULLSUELDO numeric(15,2) NOT NULL) [42001-214]
+2024-02-27 15:56:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "DROP TABLE [*]IF EXIST USUARIO; CREATE TABLE USUARIO(ID INT PRIMARY KEY,NOMBRE varchar(100) NOT NULL, EMAIL varchar(100) NOT NULL, SUELDO numeric(15,2) NOT NULL, )"; se esperaba "identifier"
+Syntax error in SQL statement "DROP TABLE [*]IF EXIST USUARIO; CREATE TABLE USUARIO(ID INT PRIMARY KEY,NOMBRE varchar(100) NOT NULL, EMAIL varchar(100) NOT NULL, SUELDO numeric(15,2) NOT NULL, )"; expected "identifier"; SQL statement:
+DROP TABLE IF EXIST USUARIO; CREATE TABLE USUARIO(ID INT PRIMARY KEY,NOMBRE varchar(100) NOT NULL, EMAIL varchar(100) NOT NULL, SUELDO numeric(15,2) NOT NULL, ) [42001-214]

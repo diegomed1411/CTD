@@ -1,0 +1,38 @@
+[2024-02-27 20:04:21] [ INFO ] [DomicilioDaoH2:21] Estamos guardando un domicilio
+[2024-02-27 20:04:21] [ INFO ] [DomicilioDaoH2:44] Este es el id: null
+[2024-02-27 20:07:49] [ INFO ] [DomicilioDaoH2:22] Estamos guardando un domicilio
+[2024-02-27 20:07:49] [ INFO ] [DomicilioDaoH2:50] Este es el id: 1
+[2024-02-27 20:08:26] [ INFO ] [DomicilioDaoH2:22] Estamos guardando un domicilio
+[2024-02-27 20:08:26] [ INFO ] [DomicilioDaoH2:50] Este es el id: 1
+[2024-02-27 20:09:17] [ INFO ] [DomicilioDaoH2:22] Estamos guardando un domicilio
+[2024-02-27 20:09:17] [ INFO ] [DomicilioDaoH2:50] Este es el id: null
+[2024-02-27 20:13:19] [ INFO ] [DomicilioDaoH2:22] Estamos guardando un domicilio
+[2024-02-27 20:13:19] [ INFO ] [DomicilioDaoH2:50] Este es el id: 1
+[2024-02-27 20:13:46] [ INFO ] [DomicilioDaoH2:22] Estamos guardando un domicilio
+[2024-02-27 20:13:46] [ INFO ] [DomicilioDaoH2:50] Este es el id: 1
+[2024-02-27 20:13:46] [ INFO ] [DomicilioDaoH2:22] Estamos guardando un domicilio
+[2024-02-27 20:13:46] [ INFO ] [DomicilioDaoH2:50] Este es el id: 2
+[2024-02-27 20:38:07] [ INFO ] [DomicilioDaoH2:25] Estamos guardando un domicilio
+[2024-02-27 20:38:07] [ INFO ] [DomicilioDaoH2:53] Este es el id: 1
+[2024-02-27 20:38:07] [ INFO ] [DomicilioDaoH2:25] Estamos guardando un domicilio
+[2024-02-27 20:38:07] [ INFO ] [DomicilioDaoH2:53] Este es el id: 2
+[2024-02-27 20:38:07] [ INFO ] [DomicilioDaoH2:74] Estamos consultando todos los domicilios
+[2024-02-27 20:39:42] [ INFO ] [DomicilioDaoH2:25] Estamos guardando un domicilio
+[2024-02-27 20:39:42] [ INFO ] [DomicilioDaoH2:53] Este es el id: 1
+[2024-02-27 20:39:42] [ INFO ] [DomicilioDaoH2:25] Estamos guardando un domicilio
+[2024-02-27 20:39:42] [ INFO ] [DomicilioDaoH2:53] Este es el id: 2
+[2024-02-27 20:39:42] [ INFO ] [DomicilioDaoH2:74] Estamos consultando todos los domicilios
+[2024-02-27 20:39:42] [ INFO ] [DomicilioDaoH2:103] Esta es la lista que se está devolviendo??? [Domicilio{id=1, calle='Calle A', numero=123, localidad='Luján', provincia='Mendoza'}, Domicilio{id=2, calle='Calle B', numero=456, localidad='Carlos Paz', provincia='Cordoba'}]
+[2024-02-27 20:42:46] [ INFO ] [DomicilioDaoH2:25] Estamos guardando un domicilio
+[2024-02-27 20:42:46] [ INFO ] [DomicilioDaoH2:53] Este es el id: 1
+[2024-02-27 20:42:46] [ INFO ] [DomicilioDaoH2:25] Estamos guardando un domicilio
+[2024-02-27 20:42:46] [ INFO ] [DomicilioDaoH2:53] Este es el id: 2
+[2024-02-27 20:42:46] [ INFO ] [DomicilioDaoH2:74] Estamos consultando todos los domicilios
+[2024-02-27 20:42:46] [ INFO ] [DomicilioDaoH2:103] Esta es la lista que se está devolviendo??? [Domicilio con id=1, calle= Calle A, numero=123, localidad='Luján, provincia='Mendoza, Domicilio con id=2, calle= Calle B, numero=456, localidad='Carlos Paz, provincia='Cordoba]
+[2024-02-27 20:44:17] [ INFO ] [DomicilioDaoH2:25] Estamos guardando un domicilio
+[2024-02-27 20:44:17] [ INFO ] [DomicilioDaoH2:53] Este es el id: 1
+[2024-02-27 20:44:17] [ INFO ] [DomicilioDaoH2:25] Estamos guardando un domicilio
+[2024-02-27 20:44:17] [ INFO ] [DomicilioDaoH2:53] Este es el id: 2
+[2024-02-27 20:44:17] [ INFO ] [DomicilioDaoH2:74] Estamos consultando todos los domicilios
+[2024-02-27 20:44:17] [ ERROR] [DomicilioDaoH2:94] Error: Cannot invoke "java.util.List.add(Object)" because "domicilioList" is null
+[2024-02-27 20:44:17] [ INFO ] [DomicilioDaoH2:103] Esta es la lista que se está devolviendo??? null

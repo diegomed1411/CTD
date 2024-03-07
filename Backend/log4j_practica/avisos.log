@@ -1,0 +1,43 @@
+[2024-02-25 12:23:21] [ INFO ] [Test:6] corriendo el programa
+[2024-02-25 12:27:50] [ INFO ] [Test:6] corriendo el programa
+[2024-02-25 12:27:50] [ INFO ] [Animal:30] El class Leon Simbaestá corriendo
+[2024-02-25 12:27:50] [ INFO ] [Animal:30] El class Tigre Manchitaestá corriendo
+[2024-02-25 12:27:50] [ INFO ] [Leon:21] Estamos validando la edad del class Leon Simba
+[2024-02-25 12:27:50] [ INFO ] [Leon:23] La edad de Simba es de 15
+[2024-02-25 12:29:08] [ INFO ] [Test:6] corriendo el programa
+[2024-02-25 12:29:08] [ INFO ] [Animal:30] El class Leon Simba está corriendo
+[2024-02-25 12:29:08] [ INFO ] [Animal:30] El class Tigre Manchita está corriendo
+[2024-02-25 12:29:08] [ INFO ] [Leon:21] Estamos validando la edad del class Leon Simba
+[2024-02-25 12:29:08] [ INFO ] [Leon:23] La edad de Simba es de 15
+[2024-02-25 12:30:29] [ INFO ] [Test:6] corriendo el programa
+[2024-02-25 12:30:29] [ INFO ] [Animal:30] El Leon Simba está corriendo
+[2024-02-25 12:30:29] [ INFO ] [Animal:30] El Tigre Manchita está corriendo
+[2024-02-25 12:30:29] [ INFO ] [Leon:21] Estamos validando la edad del class Leon Simba
+[2024-02-25 12:30:29] [ INFO ] [Leon:23] La edad de Simba es de 15
+[2024-02-25 12:48:24] [ INFO ] [Test:6] corriendo el programa
+[2024-02-25 12:48:24] [ INFO ] [Animal:30] El Leon Simba está corriendo
+[2024-02-25 12:48:24] [ INFO ] [Animal:30] El Tigre Manchita está corriendo
+[2024-02-25 12:48:24] [ INFO ] [Leon:21] Estamos validando la edad del Leon Simba
+[2024-02-25 12:48:24] [ INFO ] [Leon:30] La edad de Simba es de 15
+[2024-02-25 12:48:32] [ INFO ] [Test:6] corriendo el programa
+[2024-02-25 12:48:32] [ INFO ] [Animal:30] El Leon Simba está corriendo
+[2024-02-25 12:48:32] [ INFO ] [Animal:30] El Tigre Manchita está corriendo
+[2024-02-25 12:48:32] [ INFO ] [Leon:21] Estamos validando la edad del Leon Simba
+[2024-02-27 10:14:05] [ INFO ] [Test:6] corriendo el programa
+[2024-02-27 10:14:05] [ INFO ] [Animal:30] El Leon Simba está corriendo
+[2024-02-27 10:14:05] [ INFO ] [Animal:30] El Tigre Manchita está corriendo
+[2024-02-27 10:14:05] [ INFO ] [Leon:21] Estamos validando la edad del Leon Simba
+[2024-02-27 10:14:05] [ ERROR] [Leon:28] La edad no puede ser negativajava.lang.Exception: Error al ingresar la edad
+[2024-02-27 10:16:05] [ INFO ] [Test:6] corriendo el programa
+[2024-02-27 10:16:05] [ INFO ] [Animal:30] El Leon Simba está corriendo
+[2024-02-27 10:16:05] [ INFO ] [Animal:30] El Tigre Manchita está corriendo
+[2024-02-27 10:16:05] [ INFO ] [Leon:21] Estamos validando la edad del Leon Simba
+[2024-02-27 10:16:05] [ ERROR] [Leon:28] La edad no puede ser negativa
+java.lang.Exception: La edad del Leon Simba es incorrecta
+	at Leon.esMayora10(Leon.java:24)
+	at Test.main(Test.java:11)
+[2024-02-27 10:30:37] [ INFO ] [Test:6] corriendo el programa
+[2024-02-27 10:30:37] [ INFO ] [Animal:30] El Leon Simba está corriendo
+[2024-02-27 10:30:37] [ INFO ] [Animal:30] El Tigre Manchita está corriendo
+[2024-02-27 10:30:37] [ INFO ] [Leon:21] Estamos validando la edad del Leon Simba
+[2024-02-27 10:30:37] [ INFO ] [Leon:31] La edad de Simba es de 15
