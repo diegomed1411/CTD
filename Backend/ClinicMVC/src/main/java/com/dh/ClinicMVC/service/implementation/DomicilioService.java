@@ -23,4 +23,7 @@ public class DomicilioService implements IDomicilioService {
     public List<Domicilio> listarTodos() {
         return iDao.listarTodos();
     }
+    public Domicilio buscarPorId(Integer id) {
+        return iDao.buscarPorId(id);
+    }
 }

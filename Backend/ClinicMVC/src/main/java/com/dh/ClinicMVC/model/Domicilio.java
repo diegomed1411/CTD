@@ -7,14 +7,8 @@ public class Domicilio {
     private String localidad;
     private String provincia;
 
-    public Domicilio(Integer id, String calle, Integer numero, String localidad, String provincia) {
-        this.id = id;
-        this.calle = calle;
-        this.numero = numero;
-        this.localidad = localidad;
-        this.provincia = provincia;
+    public Domicilio() {
     }
-
 
     public Domicilio(String calle, Integer numero, String localidad, String provincia) {
         this.calle = calle;
@@ -23,7 +17,12 @@ public class Domicilio {
         this.provincia = provincia;
     }
 
-    public Domicilio() {
+    public Domicilio(Integer id, String calle, Integer numero, String localidad, String provincia) {
+        this.id = id;
+        this.calle = calle;
+        this.numero = numero;
+        this.localidad = localidad;
+        this.provincia = provincia;
     }
 
     public Integer getId() {

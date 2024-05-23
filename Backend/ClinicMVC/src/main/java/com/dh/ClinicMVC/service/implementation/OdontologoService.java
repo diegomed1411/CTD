@@ -32,4 +32,14 @@ public class OdontologoService implements IOdontologoService {
     public Odontologo buscarPorId(Integer id) {
         return iDao.buscarPorId(id);
     }
+
+    @Override
+    public void actualizar(Odontologo odontologo) {
+        iDao.actualizar(odontologo);
+    }
+
+    @Override
+    public void eliminar(Integer id) {
+        iDao.eliminar(id);
+    }
 }

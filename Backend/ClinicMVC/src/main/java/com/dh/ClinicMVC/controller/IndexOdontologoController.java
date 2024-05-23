@@ -11,16 +11,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequestMapping("/odontologo")
-public class OdontologoController {
+public class IndexOdontologoController {
 
     private IOdontologoService odontologoService;
 
-    public OdontologoController(OdontologoService odontologoService) {
+    public IndexOdontologoController(OdontologoService odontologoService) {
         this.odontologoService = odontologoService;
     }
 
     //métodos -> endpoints -> GET/POST/PUT/DELETE
-    @GetMapping("/id")
+    @GetMapping()
     public String buscarOdontologoPorId(Model model, @RequestParam("id") Integer id) {
         Odontologo odontologo = odontologoService.buscarPorId(id);
         model.addAttribute("nombre", odontologo.getNombre());
